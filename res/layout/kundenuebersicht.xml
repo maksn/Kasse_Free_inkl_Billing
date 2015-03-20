@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_kundenheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blackbutton"
+        android:gravity="center_horizontal"
+        android:text="@string/kundenuebersicht_von"
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeGesBetrag" />
+
+    <ListView
+        android:id="@+id/lv_kue_artikel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blackbutton" >
+
+    </ListView>
+
+</LinearLayout>

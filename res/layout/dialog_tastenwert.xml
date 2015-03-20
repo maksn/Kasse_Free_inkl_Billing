@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/schwarz"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tv_twbez"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="50"
+                    android:gravity="center|right"
+                    android:text="@string/bezeichnung"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+                <EditText
+                    android:id="@+id/artikelname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/preis"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeSysBtn" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tv_twpreis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="50"
+                    android:gravity="center|right"
+                    android:text="@string/preis"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+                <EditText
+                    android:id="@+id/preis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:nextFocusDown="@+id/artikelname"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeSysBtn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnheight"
+                
+                android:weightSum="100" >
+
+                <ImageButton
+                    android:id="@+id/clrbtn_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/bluebutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/greybutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_green"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/greenbutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/redbutton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnheight"
+                
+                android:weightSum="100" >
+
+                <ImageButton
+                    android:id="@+id/clrbtn_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/yellowbutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_brown"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/brownbutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_orange"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/orangebutton" />
+
+                <ImageButton
+                    android:id="@+id/clrbtn_pink"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/pinkbutton" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/header_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/vorschau"
+                android:textColor="@color/weiss" />
+
+            <Button
+                android:id="@+id/dialogvorschaubtn"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bluebutton"
+                android:text="Button"
+                android:textColor="@color/weiss" />
+
+            <TextView
+                android:id="@+id/kunde_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/zum_taste_loeschen_longClick_ausfuehren"
+                android:textColor="@color/weiss"
+                android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+            <Button
+                android:id="@+id/dialog_taste_loeschen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/greybutton"
+                android:text="@string/taste_loeschen"
+                android:textColor="@color/weiss"
+                android:textSize="@dimen/TxtSizeSysBtn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/dialog_speichern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bluebutton"
+                    android:text="@string/speichern"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeSysBtn" />
+
+                <Button
+                    android:id="@+id/dialog_verwerfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bluebutton"
+                    android:text="@string/verwerfen"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeSysBtn" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

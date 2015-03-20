@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <Button
+        android:id="@+id/btn_starttablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tabletversion_starten"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <Button
+        android:id="@+id/btn_startsmart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/smartphone_version_starten"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+</LinearLayout>

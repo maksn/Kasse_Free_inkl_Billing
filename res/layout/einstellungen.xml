@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cb_wechselgeld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wechselgeld"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <CheckBox
+        android:id="@+id/cb_zusammenfassung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zusammenfassung"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_einlage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/einlage"
+            android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+        <EditText
+            android:id="@+id/et_kassenbestand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLines="1"
+            android:textSize="@dimen/TxtSizeSysBtn" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_einstellungen_zurueck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebutton"
+        android:text="@string/zurueck"
+        android:textSize="@dimen/TxtSizeSysBtn" />
+
+</LinearLayout>

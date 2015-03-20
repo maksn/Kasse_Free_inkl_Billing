@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/schwarz"
+    android:orientation="vertical"
+    tools:context="jz.apps.kassepro.StartActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/btn_tabletstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/tabletversion_starten"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <Button
+        android:id="@+id/btn_smartstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/smartphone_version_starten"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/asappitlogo" />
+
+</LinearLayout>

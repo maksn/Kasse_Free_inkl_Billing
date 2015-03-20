@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlayroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/schwarz"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blackbutton"
+                android:gravity="center_horizontal"
+                android:text="@string/umsatzstatistik"
+                android:textColor="@color/weiss"
+                android:textSize="@dimen/TxtSizeInfoLeiste"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blackbutton"
+                
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tv_umsatz_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:gravity="center_horizontal|right"
+                    android:text="@string/umsatzstatistik"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeInfoLeiste"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"
+                    android:text="@string/minus"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeGesBetrag"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_umsatz_ende"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:gravity="left"
+                    android:text="TextView"
+                    android:textColor="@color/weiss"
+                    android:textSize="@dimen/TxtSizeInfoLeiste"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tablelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+					<TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/tv_hmenge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:background="@drawable/blackbutton"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Anz"
+                        android:textColor="@color/weiss"
+                        android:textSize="@dimen/TxtSizeSysBtn"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hbez"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/blackbutton"
+                        android:text="@string/bezeichnung"
+                        android:textColor="@color/weiss"
+                        android:textSize="@dimen/TxtSizeSysBtn"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hep"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:background="@drawable/blackbutton"
+                        android:gravity="center_horizontal"
+                        android:text="@string/ep"
+                        android:textColor="@color/weiss"
+                        android:textSize="@dimen/TxtSizeSysBtn"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hgp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:background="@drawable/blackbutton"
+                        android:gravity="center_horizontal"
+                        android:text="@string/gp"
+                        android:textColor="@color/weiss"
+                        android:textSize="@dimen/TxtSizeSysBtn"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100" >
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+                
+            </TableLayout>
+           
+
+        </LinearLayout>
+    </ScrollView>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/tv_zuzahlentext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:background="@drawable/blackbutton"
+            android:gravity="right"
+            android:text="@string/aktuellerKassenbestand"
+            android:textColor="@color/weiss"
+            android:textSize="@dimen/TxtSizeInfoLeiste"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_gUmsatz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="30"
+            android:background="@drawable/blackbutton"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/weiss"
+            android:textSize="@dimen/TxtSizeInfoLeiste"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:weightSum="100" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btn_umsatz_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:background="@drawable/bluebutton"
+            android:text="@string/loeschen"
+            android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+        <Button
+            android:id="@+id/tv_export"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:background="@drawable/bluebutton"
+            android:text="@string/export"
+            android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+        <Button
+            android:id="@+id/btn_umsatz_zurueck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:background="@drawable/bluebutton"
+            android:text="@string/abbruch"
+            android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    </LinearLayout>
+
+</LinearLayout>

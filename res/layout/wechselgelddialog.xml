@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_wgelddialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/zu_zahlender_betrag"
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <TextView
+        android:id="@+id/tv_zuzahlenderBetragDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <TextView
+        android:id="@+id/tv_wgelddialog_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/erhaltener_betrag"
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/et_betragEingabe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_wgeldok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/ok"
+            android:textColor="@color/weiss"
+            android:textSize="@dimen/TxtSizeSysBtn" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_wgelddialog_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/wechselgeld"
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeInfoLeiste" />
+
+    <TextView
+        android:id="@+id/tv_wechselgeld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="0,00 "
+        android:textColor="@color/weiss"
+        android:textSize="@dimen/TxtSizeInfoLeiste"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_wgeld_abbrechen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:background="@drawable/bluebutton"
+            android:text="@string/abbruch"
+            android:textColor="@color/weiss"
+            android:textSize="@dimen/TxtSizeSysBtn" />
+
+        <Button
+            android:id="@+id/btn_wgeld_erhalten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:background="@drawable/bluebutton"
+            android:text="@string/geld_erhalten"
+            android:textColor="@color/weiss"
+            android:textSize="@dimen/TxtSizeSysBtn" />
+
+    </LinearLayout>
+
+</LinearLayout>
